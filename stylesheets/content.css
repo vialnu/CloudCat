@@ -1,0 +1,194 @@
+/* общие параметры */
+@font-face {
+  font-family: "CirceRounded";
+  src: url("../fonts/CirceRoundedAlt-Regular2.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+/* общие параметры */
+*{
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+html {
+  background-color: #FFFFFF;
+  transition: all .6s ease;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  cursor: url('../images/cat.svg'), auto;
+}
+
+html:active {
+  cursor: url('../images/catactive.svg'), auto;
+}
+
+html:pointer {
+  cursor: url('../images/catactive.svg'), auto;
+}
+
+/* Создаем стиль, который будет просить пользователя перевернуть экран в горизонтальное положение */
+@media only screen and (max-width: 767px) {
+  body {
+      display: none; 
+      background: #000;
+      color: #fff; 
+      text-align: center; 
+      padding: 20px; /
+  }
+
+  body::before {
+      content: "Пожалуйста, переверните устройство для просмотра сайта"; 
+      font-size: 24px; 
+      font-family: "CirceRounded";
+  }
+}
+
+
+.icon1 {
+  position: absolute;
+  width: 39vw;
+  height: 35vw;
+  top: -2vw;
+  left: 1vw;
+}
+
+/* кнопочка */
+button {
+  position: absolute;
+  width: 20vw;
+  height: 6vw;
+  background-color: none ;
+  background-position: center;
+  transition-duration: 0.4s;
+  border: none;
+  
+}
+
+/* кнопочка мероприятия */
+#button1 {
+  width: 20vw;
+  height: 6vw;
+  background-size: 20vw 6vw;
+  cursor: url(../image/catactive.svg), auto;
+  background-image: url(../images/button1.png);
+  margin: 18vw auto;
+  left: 6vw;
+  transform: rotate(8deg);
+  border-radius: 23px;
+  cursor: url(../images/catactive.svg), auto;
+}
+
+/* кнопочка игра */
+#button2 {
+  width: 18vw;
+  height: 7vw;
+  background-size: 18vw 7vw;
+  cursor: url(../image/catactive.svg), auto;
+  background-image: url(../images/button2.png);
+  margin: 15vw auto;
+  left: 80vw;
+  transform: rotate(-8deg);
+  border-radius: 26px;
+  cursor: url(../images/catactive.svg), auto;
+}
+
+.icon2 {
+  position: absolute;
+  width: 39vw;
+  height: 35vw;
+  top: -2vw;
+  left: 60vw;
+}
+
+/* кнопочка книга*/
+#button3 {
+  width: 18vw;
+  height: 7vw;
+  background-size: 18vw 7vw;
+  cursor: url(../image/catactive.svg), auto;
+  background-image: url(../images/button3.png);
+  margin: 30vw auto;
+  left: 35vw;
+  transform: rotate(5deg);
+  border-radius: 26px;
+  cursor: url(../images/catactive.svg), auto;
+}
+
+/* кнопочка продукция */
+#button4 {
+  width: 21vw;
+  height: 7vw;
+  background-size: 21vw 7vw;
+  cursor: url(../image/catactive.svg), auto;
+  background-image: url(../images/button4.png);
+  margin: 43vw auto;
+  left: 76vw;
+  transform: rotate(4deg);
+  border-radius: 25px;
+  cursor: url(../images/catactive.svg), auto;
+}
+
+/* кнопочка пространства */
+#button5 {
+  width: 23vw;
+  height: 6vw;
+  background-size: 23vw 6vw;
+  cursor: url(../image/catactive.svg), auto;
+  background-image: url(../images/button5.png);
+  margin: 44vw auto;
+  left: 4vw;
+  transform: rotate(6deg);
+  border-radius: 25px;
+  cursor: url(../images/catactive.svg), auto;
+}
+
+.icon3 {
+  position: absolute;
+  width: 29vw;
+  height: 21vw;
+  top: 15vw;
+  left: 35vw;
+}
+
+.icon4 {
+  position: absolute;
+  width: 40vw;
+  height: 40vw;
+  top: 20vw;
+  left: 56vw;
+}
+
+.icon5 {
+  position: absolute;
+  width: 38vw;
+  height: 21.5vw;
+  top: 33vw;
+  left: 1vw;
+}
+
+.designer {
+  position: absolute;
+  top: 54vw;
+  left: 0.5vw;
+  font-size: 2vw;
+  font-family: CirceRounded;
+  color: #ffffff;
+  -webkit-text-stroke: 2px black;
+  
+}
+
+.home {
+  position: absolute;
+  width: 6vw;
+  height: 3vw;
+  background-size: 6vw 3vw;
+  cursor: url(../image/catactive.svg), auto;
+  margin:auto;
+  left: 0vw;
+  
+}

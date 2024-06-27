@@ -1,0 +1,311 @@
+@font-face {
+  font-family: "CirceRounded";
+  src: url("../fonts/CirceRoundedAlt-Regular2.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CirceRounded";
+  src: url("../fonts/CirceRoundedAlt-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text-mer {
+  position: absolute;
+  font-family: "CirceRounded";
+  margin-left: 37.8vw;
+  text-align: center;
+  font-size: 4vw;
+  color: #ffffff;
+  -webkit-text-stroke: 3px black;
+}
+
+body{
+  background: #ffffff;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+html {
+  background-color: #FFFFFF;
+  transition: all .6s ease;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  cursor: url('../images/cat.svg'), auto;
+}
+
+/* карточки ивентов */
+.event_cards {
+  position: absolute;
+  top: 5vw;
+  width: auto;
+  height: 32vw;
+  transition: all 1s cubic-bezier(0.42, 0, 0.28, 1.45);
+  display: inline-flex;
+  transform: translateX(-1vw);
+}
+.bt, .meditation, .fluid_art, .gadaniya {
+  box-sizing: border-box;
+  margin: 0 6vw;
+  width: 22vw;
+  height: 32vw;
+  background-color: #ffffff;
+}
+/* анимации карточек */
+.meditation {
+  animation: meditation 15s linear infinite;
+  background-size: contain;
+  animation-play-state: running;
+}
+.meditation .darken {
+  opacity: 0;
+}
+@keyframes meditation {
+  0% {background-image: url(../images/poster1.jpg);opacity: 1}
+  27% {background-image: url(../images/poster1.jpg);opacity: 1}
+  30% {background-image: url(../images/poster1.jpg);opacity: 0}
+  33% {background-image: url(../images/poster1.jpg);opacity: 1}
+  60% {background-image: url(../images/poster1.jpg);opacity: 1}
+  63% {background-image: url(../images/poster1.jpg);opacity: 0}
+  66% {background-image: url(../images/poster1.jpg);opacity: 1}
+  93% {background-image: url(../images/poster1.jpg);opacity: 1}
+  96% {background-image: url(../images/poster1.jpg);opacity: 0}
+  100% {background-image: url(../images/poster1.jpg);opacity: 1}
+}
+.bt {
+  animation: bt 15s linear infinite;
+  background-size: contain;
+    animation-play-state: paused;
+}
+@keyframes bt {
+  0% {background-image: url(../images/poster2.jpg);opacity: 1}
+  27% {background-image: url(../images/poster2.jpg);opacity: 1}
+  30% {background-image: url(../images/poster2.jpg);opacity: 0}
+  33% {background-image: url(../images/poster2.jpg);opacity: 1}
+  60% {background-image: url(../images/poster2.jpg);opacity: 1}
+  63% {background-image: url(../images/poster2.jpg);opacity: 0}
+  66% {background-image: url(../images/poster2.jpg);opacity: 1}
+  93% {background-image: url(../images/poster2.jpg);opacity: 1}
+  96% {background-image: url(../images/poster2.jpg);opacity: 0}
+  100% {background-image: url(.../images/poster2.jpg);opacity: 1}
+}
+.gadaniya {
+  animation: gadaniya 15s linear infinite;
+  background-size: contain;
+    animation-play-state: paused;
+}
+@keyframes gadaniya {
+  0% {background-image: url(../images/poster3.jpg);opacity: 1}
+  27% {background-image: url(../images/poster3.jpg);opacity: 1}
+  30% {background-image: url(../images/poster3.jpg);opacity: 0}
+  33% {background-image: url(../images/poster3.jpg);opacity: 1}
+  60% {background-image: url(../images/poster3.jpg);opacity: 1}
+  63% {background-image: url(../images/poster3.jpg);opacity: 0}
+  66% {background-image: url(../images/poster3.jpg);opacity: 1}
+  93% {background-image: url(../images/poster3.jpg);opacity: 1}
+  96% {background-image: url(../images/poster3.jpg);opacity: 0}
+  100% {background-image: url(../images/poster3.jpg);opacity: 1}
+}
+.fluid_art {
+  animation: fluid_art 15s linear infinite;
+  background-size: contain;
+    animation-play-state: paused;
+}
+@keyframes fluid_art {
+  0% {background-image: url(../images/poster4.jpg);opacity: 1}
+  27% {background-image: url(../images/poster4.jpg);opacity: 1}
+  30% {background-image: url(../images/poster4.jpg);opacity: 0}
+  33% {background-image: url(../images/poster4.jpg);opacity: 1}
+  60% {background-image: url(../images/poster4.jpg);opacity: 1}
+  63% {background-image: url(../images/poster4.jpg);opacity: 0}
+  66% {background-image: url(../images/poster4.jpg);opacity: 1}
+  93% {background-image: url(../images/poster4.jpg);opacity: 1}
+  96% {background-image: url(../images/poster4.jpg);opacity: 0}
+  100% {background-image: url(../images/poster4.jpg);opacity: 1}
+}
+
+/* кнопки вперед, назад */
+.previous, .next {
+  position: absolute;
+  width: 5vw;
+  height: 8vw;
+  background-color: #ffffff00;
+  border-radius: 40vw;
+  border: none;
+  transition: all 0.7s ease-out;
+  color: #ffffff;
+  cursor: url('../images/catactive.svg'), auto;
+  /* картинка ховер при наведении на стрелки */
+}
+.previous img, .next img {
+  width: 40%;
+  height: 40%;
+}
+.previous {
+  left:1vw;
+  top: 40%;
+}
+.next {
+  right:1vw;
+  top: 40%;
+  transform: rotate(180deg);
+}
+/* цветовой фильтр, накладывающийся на неактивные карточки */
+.darken {
+  width: 100%;
+  height: 100%;
+  transition: all 0.7s ease-out;
+  background: #FFDCE9;
+  mix-blend-mode: color;
+}
+
+
+.positionmask{
+  position: fixed;
+  pointer-events: none;
+  z-index: 20;
+  margin-top: -2%;
+}
+
+.positionmask2{
+  position: fixed;
+  pointer-events: none;
+  z-index: 20;
+  margin-top: 30%;
+}
+
+.logoimg{
+z-index: 1000;
+}
+
+
+.divlogo{
+  z-index: 1010;
+  width: 100%;
+  width: 20%;
+  position: absolute;
+  margin: 5px 10px;
+}
+.home{
+  width: 30%;
+  height: 30%;
+}
+
+.zapis {
+  position: absolute;
+  width: 15vw;
+  height: 5vw;
+  margin-left: 42vw;
+  margin-top: 45vw;
+  border-radius: 30px;
+  background-color: #FFFFFF;
+  font-family: "CirceRounded";
+  font-size: 2vw;
+  cursor: url('../images/catactive.svg'), auto;
+}
+
+.reg_form {
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 35% ;
+  width: 25vw;
+  height: 30vw;
+  background-color: rgb(255, 255, 255);
+  padding: 2vw 3vw;
+  gap: 2vw;
+  border-radius: 2vw;
+  transition: all 0.7s ease-out;
+  z-index: 2;
+  /* pointer-events: none; */
+}
+
+
+/* заголовок формы */
+.reg_head {
+  position: absolute;
+  left: 5.7vw;
+  top: 5vw;
+  font-family: "CirceRounded";
+  font-size: 3vw;
+  color: rgb(15, 15, 15);
+}
+
+/* сопровождающий текст */
+.reg_text {
+  position: absolute;
+  left: 2.5vw;
+  top: 9vw;
+  font-size: 1.3vw;
+  font-family: "CirceRounded";
+  color: black;
+  text-align: center;
+}
+
+.inputContainer {
+  position: relative;
+  top: 23vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+/* имейл */
+#email-address {
+  position: relative;
+  top: -5vw;
+  right: 1vw;
+  height: 3vw;
+  width: 100%;
+  border: solid #AC6AFF 0.15vw;
+  background-color: white;
+  padding: 0 1vw;
+  outline: none;
+  border-radius: 3vw;
+  text-align: center;
+}
+/* кнопка регистрации */
+.reg_btn {
+  position: relative;
+  right: 0vw;
+  width: 100%;
+  height: 3vw;
+  border: none;
+  background-color: #AC6AFF;
+  color: rgb(0, 0, 0);
+  border-radius: 3vw;
+  letter-spacing: 0.05vw;
+  cursor: url('../images/catactive.svg'), auto;
+  transition: all 0.7s ease-out;
+}
+
+.reg_btn:active {
+  background-color: #0cb60c;
+}
+
+/* кнопка закрыть */
+.close {
+  position: absolute;
+  top: 0.5vw;
+  right: 0.5vw;
+  background-color: #AC6AFF;
+  border-radius: 40vw;
+  border: solid #ffffff 0.15vw;
+  width: 4vw;
+  height: 4vw;
+  border: none;
+  color: white;
+  font-size: 2vw;
+  cursor: url('../images/catactive.svg'), auto;
+}
+
+.text-close {
+  position: absolute;
+  font-size: 2vw;
+  font-family: "CirceRounded";
+  margin-top: -7.6vw;
+  margin-left: 24.8vw;
+  
+}

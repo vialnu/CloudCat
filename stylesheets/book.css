@@ -1,0 +1,91 @@
+/* общие параметры */
+@font-face {
+    font-family: "CirceRounded";
+    src: url("../fonts/CirceRoundedAlt-Regular2.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  /* общие параметры */
+  *{
+    box-sizing: border-box;
+  }
+  html, body {
+    height: 100%;
+  }
+  
+  html {
+    background-color: #ffffff;
+    transition: all .6s ease;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    cursor: url('../images/cat.svg'), auto;
+    background-image: url(../images/fon.png);
+    background-attachment: fixed;
+    background-size: 100vw 100vw;
+  }
+  
+  html:active {
+    cursor: url('../images/catactive.svg'), auto;
+  }
+  
+  html:pointer {
+    cursor: url('../images/catactive.svg'), auto;
+  }
+
+.home {
+position: absolute;
+width: 6vw;
+height: 3vw;
+background-size: 6vw 3vw;
+cursor: url(../image/catactive.svg), auto;
+margin:auto;
+left: 0vw;
+cursor: url(../images/catactive.svg), auto;
+}
+
+.text-kniga {
+position: absolute;
+left: 44vw;
+font-family: "CirceRounded";
+font-size: 4vw;
+color: #ffffff;
+-webkit-text-stroke: 3px black;
+}
+
+.fon {
+  position: absolute;
+  width: 85vw;
+  height: 55vw;
+  left: 8vw;
+  margin: 0vw;
+}
+
+
+.image-stack {
+  position: absolute;
+  width: 56vw;
+  height: 39vw;
+  margin: 0 auto;
+  margin-top: 7vw;
+  margin-left: 20vw;
+  cursor: url("../images/catactive.svg") 32 32, auto;
+}
+
+.image-stack img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.blur {
+  filter: blur(5px);
+}
+
+@media (max-width: 768px) {
+  .image-stack {
+    margin-top: 120px;
+    width: 90%;
+    height: 65vw;
+  }
+}

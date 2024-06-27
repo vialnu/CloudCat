@@ -1,0 +1,214 @@
+/* общие параметры */
+@font-face {
+font-family: "CirceRounded";
+src: url("../fonts/CirceRoundedAlt-Regular2.ttf") format("truetype");
+font-weight: 400;
+font-style: normal;
+}
+/* общие параметры */
+*{
+box-sizing: border-box;
+}
+html, body {
+height: 100%;
+}
+  
+html {
+background-color: #FFFFFF;
+transition: all .6s ease;
+overflow-y: scroll;
+scroll-behavior: smooth;
+cursor: url('../images/cat.svg'), auto;
+}
+  
+html:active {
+cursor: url('../images/catactive.svg'), auto;
+}
+  
+html:pointer {
+cursor: url('../images/catactive.svg'), auto;
+}
+
+.text-mer {
+position: absolute;
+font-family: "CirceRounded";
+margin: 0vw;
+margin-left: 37.8vw;
+text-align: center;
+font-size: 4vw;
+color: #ffffff;
+-webkit-text-stroke: 3px black;
+}
+
+.text1 {
+position: absolute;
+font-family: "CirceRounded";
+font-size: 2vw;
+margin-top: 5vw;
+left: 38vw;
+color: #ffffff;
+-webkit-text-stroke: 2px black;
+}
+
+.home {
+position: absolute;
+width: 6vw;
+height: 3vw;
+background-size: 6vw 3vw;
+cursor: url(../image/catactive.svg), auto;
+margin:auto;
+left: 0vw;
+cursor: url(../images/catactive.svg), auto;
+}
+
+.nav1 {
+position: absolute;
+width: 28vw;
+height: 40vw;
+margin-top: 8vw;
+left: 1vw;
+}
+
+.nav2 {
+position: absolute;
+width: 28vw;
+height: 40vw;
+margin-top: 8vw;
+left: 36vw;
+}
+
+.nav3 {
+position: absolute;
+width: 28vw;
+height: 40vw;
+margin-top: 8vw;
+left: 71vw;
+}
+
+.text2 {
+position: absolute;
+font-family: "CirceRounded";
+font-size: 2vw;
+margin-top: 49vw;
+left: 46vw;
+color: #ffffff;
+-webkit-text-stroke: 2px black;
+}
+
+.reseption1 {
+position: absolute;
+width: 28vw;
+height: 40vw;
+margin-top: 52vw;
+left: 1vw;
+}
+
+.reseption2 {
+position: absolute;
+width: 28vw;
+height: 40vw;
+margin-top: 52vw;
+left: 36vw;
+}
+
+.reseption3 {
+position: absolute;
+width: 28vw;
+height: 40vw;
+margin-top: 52vw;
+left: 71vw;
+}
+
+.text3 {
+position: absolute;
+font-family: "CirceRounded";
+font-size: 2vw;
+margin-top: 93vw;
+left: 43.8vw;
+color: #ffffff;
+-webkit-text-stroke: 2px black;
+}
+
+.work1 {
+position: absolute;
+width: 28vw;
+height: 40vw;
+margin-top: 96vw;
+left: 1vw;
+}
+
+.work2 {
+position: absolute;
+width: 28vw;
+height: 40vw;
+margin-top: 96vw;
+left: 36vw;
+}
+
+.work3 {
+position: absolute;
+width: 28vw;
+height: 40vw;
+margin-top: 96vw;
+left: 71vw;
+}
+
+.text4 {
+position: absolute;
+font-family: "CirceRounded";
+font-size: 2vw;
+margin-top: 157vw;
+left: 45vw;
+color: #ffffff;
+-webkit-text-stroke: 2px black;
+}
+
+.chill1 {
+position: absolute;
+width: 28vw;
+height: 40vw;
+margin-top: 139vw;
+left: 1vw;
+}
+
+.chill2 {
+position: absolute;
+width: 28vw;
+height: 40vw;
+margin-top: 139vw;
+left: 71vw;
+}
+
+.text5 {
+position: absolute;
+font-family: "CirceRounded";
+font-size: 2vw;
+margin-top: 179vw;
+left: 43vw;
+color: #ffffff;
+-webkit-text-stroke: 2px black;
+}
+
+.full1 {
+position: absolute;
+width: 28vw;
+height: 45vw;
+margin-top: 182vw;
+left: 1vw;
+}
+
+.full2 {
+position: absolute;
+width: 28vw;
+height: 45vw;
+margin-top: 182vw;
+left: 36vw;
+}
+
+.full3 {
+position: absolute;
+width: 28vw;
+height: 45vw;
+margin-top: 182vw;
+left: 71vw;
+}
