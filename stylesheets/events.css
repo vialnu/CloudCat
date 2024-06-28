@@ -180,17 +180,14 @@ html {
 z-index: 1000;
 }
 
-
-.divlogo{
-  z-index: 1010;
-  width: 100%;
-  width: 20%;
-  position: absolute;
-  margin: 5px 10px;
-}
-.home{
-  width: 30%;
-  height: 30%;
+.home {
+position: absolute;
+width: 6vw;
+height: 3vw;
+background-size: 6vw 3vw;
+cursor: url(../image/catactive.svg), auto;
+margin:auto;
+left: 0vw;
 }
 
 .zapis {
